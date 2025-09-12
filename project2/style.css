@@ -1,0 +1,99 @@
+/* Global */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Index page */
+.index-body {
+  background: linear-gradient(135deg, #667eea, #764ba2, #2575fc);
+  height: 100vh;
+}
+.btn-gradient {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-size: 18px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.btn-gradient:hover {
+  opacity: 0.85;
+  transform: scale(1.05);
+}
+
+/* Navbar */
+.custom-navbar {
+  background: linear-gradient(90deg, #1e3c72, #2a5298, #764ba2);
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  height: 100vh;
+  margin-top: 56px; /* offset navbar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.animate-fade {
+  animation: fadeIn 2s ease-in-out;
+}
+.animate-slide {
+  animation: slideUp 2s ease-in-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes slideUp {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/*  About Section */
+.about-section {
+  background: #e0f7fa;
+  padding: 80px 20px;
+}
+
+.about-section .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #ddd;
+  transition: transform 0.3s;
+}
+.profile-img:hover {
+  transform: scale(1.1) rotate(2deg);
+}
+
+/* Showcase Section */
+.showcase-section {
+  background: linear-gradient(135deg, #2196f3, #00bfa5);
+  color: #fff;
+}
+.hover-card {
+  transition: transform 0.3s;
+}
+.hover-card:hover {
+  transform: translateY(-10px);
+}
+.hover-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  transition: all 0.3s ease;
+}
+
+
+/* Contact Section */
+.contact-section {
+  background: linear-gradient(90deg, #232526, #414345);
+}
